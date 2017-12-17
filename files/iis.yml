@@ -1,0 +1,13 @@
+---
+- hosts: web
+  tasks:
+  - name: Ensure IIS web server is installed
+    win_feature:
+      name: Web-Server
+      state: present
+    when: ansible_os_family == "Windows"
+
+  - name: Deploy index file
+    template:
+      src: iisstart.j2
+      dest: c:\inetpub\wwwroot\iisstart.htm
