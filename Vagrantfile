@@ -50,19 +50,19 @@ Vagrant.configure("2") do |config|
     #     end
     # end
 
-# This is a second windows box to test winexe and ansible commands.
-    # config.vm.define "winr2server01" do |win01|
-    #     win01.vm.box = "jptoto/Windows2012R2"
-    #     win01.vm.hostname = "windows-server01"
-    #     win01.vm.communicator = "winrm"
-    #     win01.winrm.username = "vagrant"
-    #     win01.winrm.password = "vagrant"
-    #     win01.vm.network "private_network", ip:"192.168.57.7"
-    #     win01.vm.provider "virtualbox" do |vb|
-    #         vb.memory = 2048
-    #         vb.cpus = 2
-    #     end
-    # end
+##This is a second windows box to test winexe and ansible commands.
+    config.vm.define "winr2server01" do |win01|
+        win01.vm.box = "jptoto/Windows2012R2"
+        win01.vm.hostname = "windows-server01"
+        win01.vm.communicator = "winrm"
+        win01.winrm.username = "vagrant"
+        win01.winrm.password = "vagrant"
+        win01.vm.network "private_network", ip:"192.168.57.7"
+        win01.vm.provider "virtualbox" do |vb|
+            vb.memory = 2048
+            vb.cpus = 2
+        end
+    end
 
 # This cento box has winexe working Do not destroy
     # config.vm.define "cent7box" do |cent7|

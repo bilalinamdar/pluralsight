@@ -1,9 +1,12 @@
+#!/bin/bash
+
 #update yum library
 sudo yum update -y
 
 # original source code
 # http://rand0m.org/2015/08/05/winexe-1-1-centos-6-and-windows-2012-r2/
 # make sure EPEL is enabled in /etc/yum.repos.d/epel.repo
+sudo yum install epel-release -y
 
 # fixup a bunch of samba dependencies
 sudo yum install -y gcc perl mingw-binutils-generic mingw-filesystem-base mingw32-binutils mingw32-cpp mingw32-crt mingw32-filesystem mingw32-gcc mingw32-headers mingw64-binutils mingw64-cpp mingw64-crt mingw64-filesystem mingw64-gcc mingw64-headers libcom_err-devel popt-devel zlib-devel zlib-static glibc-devel glibc-static python-devel
