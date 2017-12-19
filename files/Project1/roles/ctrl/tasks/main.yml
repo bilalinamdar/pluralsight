@@ -1,0 +1,6 @@
+---
+# https://github.com/geerlingguy/ansible-role-repo-epel
+- name: Install PIP
+  yum:
+   name: python-pip
+   state: present

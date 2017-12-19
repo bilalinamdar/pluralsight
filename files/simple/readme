@@ -1,0 +1,7 @@
+This version uses simple way to use ansible
+
+ansible rdp -i inventory.yml -m win_ping
+
+this command calls the rdp group inside the inventory file
+and uses teh win_ping module
+

@@ -1,0 +1,6 @@
+
+
+## Enable PS Remoting
+winexe --authentication-file=./authfile //192.168.57.7 'powershell -command "Enable-PSRemoting -force"'
+
+

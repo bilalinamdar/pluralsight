@@ -1,0 +1,23 @@
+
+
+Simple - basic
+- learning how to make ansible commands
+- ansible web -i inventory.ym. -m win_ping
+
+
+Step3 - 
+
+Step4 - Learning how to use playbooks
+
+- Calls ansible-playbook iis.yml
+- this iis.yml contains which host and task to perform
+- this playbook intall IIS service and copy file to the server
+
+
+Step5 - Incorporating Roles and folder structures
+- in this section we clean up folder and add folder structure
+- to call use ansible-playbook webserver.yml
+- inside the webserver.yml we just include the role
+
+
+Project1 - First attempt to create Configuration Server and Control Server using everythin gwe learned above.

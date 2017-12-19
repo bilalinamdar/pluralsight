@@ -1,0 +1,12 @@
+This is step 2
+
+with this configuration we use the ansible.cfg file that contains the inventory.yml location
+group_vars would contain the parameters for each host group.
+- it contains the passwords etc..
+
+
+demo run
+ansible web -m win_ping
+
+notice we do not use the inventory folder
+
